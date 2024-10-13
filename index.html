@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brevity: AI-powered tool to summarize YouTube videos and documents">
+    <title>Brevity - Summarize Smarter</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff007f; /* Brevity's pink tint */
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        button {
+            background-color: #ff007f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e60073;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Feature section */
+        #features {
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            margin: 30px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #ff007f;
+            padding: 15px 30px;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #e60073;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            background-color: #f0f0f0;
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            color: #ff007f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brevity ✨</h1>
+            <p>The AI tool to summarize YouTube videos and documents effortlessly.</p>
+            <button class="get-started-btn" onclick="showFeatures()">Get Started</button>
+        </header>
+
+        <section id="features" class="hidden">
+            <h2>Why Brevity?</h2>
+            <div class="feature-box">
+                <h3>📽 Summarize YouTube Videos</h3>
+                <p>Paste a YouTube link, and Brevity will give you concise takeaways in seconds.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>📄 Summarize Documents</h3>
+                <p>Upload your PDFs or text files for fast, organized summaries.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>⏳ Save Time, Boost Productivity</h3>
+                <p>Get summaries in seconds, so you can focus on what really matters.</p>
+            </div>
+
+            <a href="#download" class="download-btn">Try Brevity Now</a>
+        </section>
+
+        <footer id="download">
+            <h2>Download Brevity Today!</h2>
+            <p>Available on iPhone, iPad, and Web.</p>
+            <button class="download-btn">Download for iOS</button>
+        </footer>
+    </div>
+
+    <script>
+        function showFeatures() {
+            document.getElementById('features').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
